@@ -1,0 +1,55 @@
+1. web services
+2. mulesoft introduction
+3. setup 
+   a. creating mulesoft anypoint studio
+   b. copy paste and unzip
+4. hello word example
+5. adding data in database
+6. domain project
+7. transformer
+8. wsdl demo
+9. choice demo
+10. exception demo
+11. scatter gather
+12. salesforce demo
+13. activemq demo
+14. deploy project
+15. creating profiles
+16. unit testing
+17. debugging
+18. raml example
+
+
+1. database
+http--> database --> objectotjson --> logger
+
+2. choice
+http--> set session variable --> choice --> c1, c2, default
+
+3. web services example
+http --> web service consumer --> xml to json
+http://mu.mulesoft-training.com/essentials/delta?wsdl
+
+4. salesforce-create-accout
+http--> transform message--> salesforce
+
+5. salesforce-get-accout
+http--> salesforce--> objecttojson --> logger	
+
+6. activemq-read
+jms--> jmsmessagetoobject --> file --> logger
+activemq
+http://activemq.apache.org/download.html
+username: admin
+password: admin
+
+
+7. activemq-write
+http --> bytearraytostring --> jms --> logger
+
+8. deploy project
+https://developer.mulesoft.com/download-mule-esb-runtime
+
+9. creating profiles
+http--> set payload--> logger --> create profiles-DEPLOY.properties, profiles-TEST.properties, profiles-DEPLOY.properties --> add env=TEST/DEV/DEPLOY --> in global element add property placeholder 
+
